@@ -100,36 +100,6 @@
                     </g>
                 </svg>
                 </div>
-                <div class="map-tooltip"></div>
-  
-                <script>
-                var confirmed = {'서울':0,'부산':0,'대구':0,'인천':0,'광주':0,'대전':0,'울산':0,'세종':0,'경기':0,'강원':0,'충청북도':0,'충청남도':0,'전라북도':0,'전라남도':0,'경상북도':0,'경상남도':0,'제주도':0};
-  
-                [].forEach.call(document.querySelectorAll('path.land'), function(item) {
-                // item.addEventListener('click', function(){
-                //   var sel =this
-                //   });
-  
-                item.addEventListener('mouseenter', function() {
-  
-                      $('#info-box').css('display','block');
-                      document.getElementById('info-box').innerHTML=this.getAttribute("title") + "<br />" + "확진자: " + confirmed[(this.getAttribute("title")).toLowerCase()]
-                      +"<br />" + "사망자: 0명"
-  
-                });
-  
-  
-                item.addEventListener('mouseleave', function(){
-                  $('#info-box').css('display','none');
-                });
-                })
-  
-                $(document).mousemove(function(e) {
-                $('#info-box').css('top',e.pageY-$('#info-box').height()-30);
-                $('#info-box').css('left',e.pageX-($('#info-box').width())/2);
-                }).mouseover();
-  
-                </script>
                         <div class="col-md-6 mt-3">
                             <div class="shadow-lg p-3 mb-3 bg-white rounded m-1">국내 확진자수 <h3 class="text-danger" id="TotalCase">0명</h3></div>
                             <div class="shadow-lg p-3 mb-3 bg-white rounded m-1">국내 완지차수 <h3 class="text-primary" id="TotalRecovered">0명</h3></div>
@@ -156,5 +126,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/jquery.ajax-cross-origin.min.js"></script>
     <script src="js/Corona_API.js"></script>
+    <script src="js/Map_tooltip.js"></script>
 </body>
 </html>

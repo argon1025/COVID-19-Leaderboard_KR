@@ -1,12 +1,12 @@
 .row.content {height: 800px}
 #info-box {
-position: absolute;;
-z-index: 1;
+position: absolute;
+z-index: 100;
 background-color: #ffffff;
 border: 2px solid #464646;
 border-radius: 5px;
 padding: 5px;
-font-family: arial;
+display: none;
 width: 150px;
 height: 100px;
 }
