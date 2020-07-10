@@ -17,7 +17,11 @@ item.addEventListener('mouseleave', function(){
 });
 })
 
-$(document).mousemove(function(e) {
-$('#info-box').css('top',e.pageY-$('#info-box').height()-100);
-$('#info-box').css('left',e.pageX-($('#info-box').width())-200);
-}).mouseover();
+const map = document.getElementById("map");
+map.addEventListener('mousemove', e => {
+      x = e.offsetX+"px";
+      y = (e.offsetY+30)+"px";
+      document.getElementById("info-box").style.top = y;
+      document.getElementById("info-box").style.left = x;
+  });
+  

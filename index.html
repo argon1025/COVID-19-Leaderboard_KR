@@ -56,8 +56,8 @@
         </div>
         <!-- Map, table box -->
         <div class="row content">
-            <div class="col-md-6">
-                <div id="info-box"></div>
+            <div class="col-md-6" id="map">
+                <div id="info-box" class="shadow-lg p-3 mb-3 bg-white rounded"></div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="700px" xmlns="http://www.w3.org/2000/svg" version="1.1">
                     <g>
                         <path id="KR-11" title="서울" class="land"
@@ -101,13 +101,13 @@
                 </svg>
                 </div>
                         <div class="col-md-6 mt-3">
-                            <div class="shadow-lg p-3 mb-3 bg-white rounded m-1">국내 확진자수 <h3 class="text-danger" id="TotalCase">0명</h3></div>
-                            <div class="shadow-lg p-3 mb-3 bg-white rounded m-1">국내 완지차수 <h3 class="text-primary" id="TotalRecovered">0명</h3></div>
-                            <div class="shadow-lg p-3 mb-3 bg-white rounded m-1">국내 사망자수 <h3 class="text-danger" id="TotalDeath">0명</h3></div>
-                            <div class="shadow-lg p-3 mb-3 bg-white rounded m-1">국내 격리자수 <h3 class="text-primary" id="NowCase">0명</h3></div>
-                            <div class="shadow-lg p-3 mb-3 bg-white rounded m-1">오늘하루 완치자수 <h3 class="text-primary" id="TodayRecovered">0명</h3></div>
-                            <div class="shadow-lg p-3 mb-3 bg-white rounded m-1">오늘하루 사망자수 <h3 class="text-danger" id="TodayDeath">0명</h3></div>
-                            <div class="shadow-lg p-3 mb-3 bg-white rounded m-1">국내 완치율 <h3 class="text-primary" id="recoveredPercentage">0%</h3></div>
+                            <div class="shadow-lg p-3 mb-3 bg-white rounded m-1">국내 확진자수 <h3 class="text-primary odometer" id="TotalCase">0</h3>명</div>
+                            <div class="shadow-lg p-3 mb-3 bg-white rounded m-1">국내 완지차수 <h3 class="text-primary odometer" id="TotalRecovered">0</h3>명</div>
+                            <div class="shadow-lg p-3 mb-3 bg-white rounded m-1">국내 사망자수 <h3 class="text-danger odometer" id="TotalDeath">0</h3>명</div>
+                            <div class="shadow-lg p-3 mb-3 bg-white rounded m-1">국내 격리자수 <h3 class="text-primary odometer" id="NowCase">0</h3>명</div>
+                            <div class="shadow-lg p-3 mb-3 bg-white rounded m-1">오늘하루 완치자수 <h3 class="text-primary odometer" id="TodayRecovered">0</h3>명</div>
+                            <div class="shadow-lg p-3 mb-3 bg-white rounded m-1">오늘하루 사망자수 <h3 class="text-danger odometer" id="TodayDeath">0</h3>명</div>
+                            <div class="shadow-lg p-3 mb-3 bg-white rounded m-1">국내 완치율 <h3 class="text-primary odometer" id="recoveredPercentage">0</h3>%</div>
                             <div class="shadow-lg p-3 mb-3 bg-white rounded m-1">최종 정보 업데이트 시각 <h6 class="text-primary" id="updateTime">-</h6></div>
                         </div>
         </div>
@@ -127,5 +127,7 @@
     <script type="text/javascript" src="js/jquery.ajax-cross-origin.min.js"></script>
     <script src="js/Corona_API.js"></script>
     <script src="js/Map_tooltip.js"></script>
+    <script src="js/odometer.js"></script>
+    <link rel="stylesheet" href="odometer-theme-default.css" />
 </body>
 </html>

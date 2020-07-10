@@ -43,13 +43,13 @@ Corona_information.prototype.UpdateChecker = function(){
     }
 }
 Corona_information.prototype.create_table = function(){
-    document.getElementById("TotalCase").innerHTML = total.TotalCase+"명";
-    document.getElementById("TotalRecovered").innerHTML = total.TotalRecovered+"명";
-    document.getElementById("TotalDeath").innerHTML = total.TotalDeath+"명";
-    document.getElementById("NowCase").innerHTML = total.NowCase+"명";
-    document.getElementById("TodayRecovered").innerHTML = total.TodayRecovered+"명";
-    document.getElementById("TodayDeath").innerHTML = total.TodayDeath+"명";
-    document.getElementById("recoveredPercentage").innerHTML = total.recoveredPercentage+"%";
+    document.getElementById("TotalCase").innerHTML = total.TotalCase;
+    document.getElementById("TotalRecovered").innerHTML = total.TotalRecovered;
+    document.getElementById("TotalDeath").innerHTML = total.TotalDeath;
+    document.getElementById("NowCase").innerHTML = total.NowCase;
+    document.getElementById("TodayRecovered").innerHTML = total.TodayRecovered;
+    document.getElementById("TodayDeath").innerHTML = total.TodayDeath;
+    document.getElementById("recoveredPercentage").innerHTML = total.recoveredPercentage;
     document.getElementById("updateTime").innerHTML = total.updateTime;
     total_check=0;
     cityinfo_check=0;
