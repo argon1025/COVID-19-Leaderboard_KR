@@ -54,7 +54,7 @@ Corona_information.prototype.create_table = function(){
     total_check=0;
     cityinfo_check=0;
     document.getElementById("loading").style.display="none";
-
+    $('.alert').alert('close');
     total_case.서울 = cityinfo.seoul.totalCase;
     total_case.부산 = cityinfo.busan.totalCase;
     total_case.대구 = cityinfo.daegu.totalCase;
