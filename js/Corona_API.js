@@ -109,5 +109,5 @@ Corona_information.prototype.create_table = function(){
     city_death.경상남도 = cityinfo.gyeongnam.death;
     city_death.제주도 = cityinfo.jeju.death;
 }
-console.log("coronaAPI done");
+console.log("coronaAPI is loading..");
 var test = new Corona_information();

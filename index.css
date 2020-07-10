@@ -1,7 +1,8 @@
 .row.content {height: 800px}
 #info-box {
 position: absolute;
-z-index: 100;
+z-index: 1000;
+width: 150px;
 
 display: none;
 pointer-events: none;
